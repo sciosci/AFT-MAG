@@ -6,3 +6,8 @@ Code:
 - `prepare_connect.ipynb`: Extracting mentor-mentee pairs
 - `prepare_aft_to_mag_affil.ipynb`: Matching institutions between AFT and MAG
 - `prepare_aft_to_mag_author.ipynb`: Linking AFT researchers to MAG authors
+- `prepare_mag_authorship.ipynb`: Export authorship and paper IDs
+
+Validations:
+
+- 
