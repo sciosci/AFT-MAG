@@ -17,3 +17,6 @@ Validations:
 - `prepare_validation_paper.ipynb`: Matching validation papers with MAG
 - `validate_aft_to_mag_author.ipynb`: Validating AFT-to-MAG author matching
 
+Vector:
+
+- `prepare_paper_author_vector_tfidf.ipynb`: TF-IDF vectors of papers and authors
