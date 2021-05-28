@@ -20,3 +20,20 @@ Validations:
 Vector:
 
 - `prepare_paper_author_vector_tfidf.ipynb`: TF-IDF vectors of papers and authors
+
+
+## Usage note
+
+To load TF-IDF vectors of papers:
+
+```
+from scipy.sparse import load_npz
+paper_tfidf = load_npz('dataset/paper_tfidf.npz')
+paper_tfidf.shape
+```
+
+`paper_tfidf` is a sparse matrix. Each row corresponds to a paper, with its ID given in the file `paper_tfidf_MAGPaperID.txt`.
+
+
+Researchers' TF-IDF vectors can be loaded similarly.
+
