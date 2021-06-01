@@ -26,8 +26,9 @@ Vector:
 
 To load TF-IDF vectors of papers:
 
-```
+```python
 from scipy.sparse import load_npz
+
 paper_tfidf = load_npz('dataset/paper_tfidf.npz')
 paper_tfidf.shape
 ```
@@ -42,7 +43,7 @@ SPECTER vectors of papers and researchers can be loaded in a row-like style:
 ```python
 import pickle
 
-fin = open('paper_specter_0.pkl', 'rb')
+fin = open('dataset/paper_specter_0.pkl', 'rb')
 unpickler = pickle.Unpickler(fin) 
 while True:
     try:
