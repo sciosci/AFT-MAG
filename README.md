@@ -37,3 +37,18 @@ paper_tfidf.shape
 
 Researchers' TF-IDF vectors can be loaded similarly.
 
+SPECTER vectors of papers and researchers can be loaded in a row-like style:
+
+```python
+import pickle
+
+fin = open('paper_specter_0.pkl', 'rb')
+unpickler = pickle.Unpickler(fin) 
+while True:
+    try:
+        pubid, vec = unpickler.load()
+        # 
+    except EOFError:
+        break
+fin.close()
+```
